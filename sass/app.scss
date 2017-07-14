@@ -1,0 +1,47 @@
+/*
+* Do not forget to delete this later, it's so important for the library size!
+*/
+@import "reset/reset.scss";
+
+/***
+*
+*
+*
+*
+* Global
+*/
+* {
+  box-sizing: border-box;
+}
+
+/***
+*
+*
+*
+*
+* Grid system
+* rows, cols settings
+*/
+$columns: 12;
+
+.s-wrap {
+  width: calc(100% - 10rem);
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.s-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through $columns {
+  .has-#{$i} {
+    flex: 0 0 100% / $columns * $i;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .jump-#{$i} {
+    margin-left: 100% / $columns * $i;
+  }
+}
