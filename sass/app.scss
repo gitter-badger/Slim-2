@@ -1,8 +1,3 @@
-/*
-* Do not forget to delete this later, it's so important for the library size!
-*/
-@import "reset/reset.scss";
-
 /***
 *
 *
@@ -12,6 +7,7 @@
 */
 * {
   box-sizing: border-box;
+  font-family: Times, "Times New Roman", sans-serif;
 }
 
 /***
@@ -207,4 +203,42 @@ $columns: 12;
       display: block;
     }
   }
+}
+
+/**
+*
+*
+* Typography settings
+*/
+.is-link {
+  color: lighten(blue, 10%);
+  padding: 1px auto;
+  text-decoration: none;
+  &:hover {
+    border-bottom: 1px black dotted;
+  }
+  &:active, &:focus {
+    @extend %black;
+  }
+}
+
+%is-paragraph {
+  padding: 10px;
+  margin: 2px;
+  letter-spacing: 1px;
+}
+
+.is-article {
+  &::first-letter {
+    font-weight: bold;
+    font-size: 170%;
+    text-transform: capitalize;
+    letter-spacing: 15px;
+    padding-left: 15px;
+  }
+  @extend %is-paragraph;
+}
+
+.is-paragraph {
+  @extend %is-paragraph;
 }
