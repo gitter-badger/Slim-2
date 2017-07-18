@@ -1,0 +1,66 @@
+
+/**
+*
+*
+*
+*
+* Navbar settings
+* I found this pen by Lee Wood best to fit!
+* <https://codepen.io/leemarkwood/pen/XJBwJR>
+* I Made some changes
+*/
+.s-nav {
+  @extend %gray;
+  .is-logo {
+    display: inline-block;
+  }
+  .is-item {
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    &:hover, &:active {
+      @extend %black;
+    }
+  }
+  .is-logo {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+  }
+}
+
+@media (min-width: 48em) {
+    .s-nav {
+      display: flex;
+      .menu-left,.menu-right {
+        display: flex;
+        flex: 1;
+      }
+      .is-item {
+          width: auto;
+      }
+      .menu-right {
+        justify-content: flex-end;
+      }
+    }
+}
+
+.s-nav {
+  div {
+    display: none;
+    @media (min-width: 48em) {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .s-nav {
+    div {
+      display: block;
+    }
+  }
+}

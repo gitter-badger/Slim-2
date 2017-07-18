@@ -1,0 +1,28 @@
+{
+  "name": "slim",
+  "version": "1.0.0",
+  "description": "Small and Simple framework for CSS",
+  "main": "./dist/slim.min.css",
+  "scripts": {
+    "test": "echo \"Sorry... Slim has not test runners, yet!\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jelhouss/Slim.git"
+  },
+  "keywords": [
+    "slim",
+    "css",
+    "flexbox-grid",
+    "forms",
+    "navbar",
+    "buttons",
+    "typography"
+  ],
+  "author": "Houssam Jelliti <jelitihoussam@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jelhouss/Slim/issues"
+  },
+  "homepage": "https://github.com/jelhouss/Slim#readme"
+}

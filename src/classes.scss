@@ -1,0 +1,47 @@
+
+/**
+*
+*
+*
+*
+* Colors classes
+*/
+%gray {
+  background-color: darken(white, 5%);
+  color: black;
+}
+
+%black {
+  background-color: lighten(black, 25%);
+  color: darken(white, 1%);
+}
+
+/**
+*
+*
+*
+*
+* Paragraph class
+*/
+%is-paragraph {
+  padding: 10px;
+  margin: 2px;
+  letter-spacing: 1px;
+}
+
+/**
+*
+*
+*
+*
+* Form class
+*/
+%form-elements {
+  width: 100%;
+  height: 40px;
+  padding: 5px 20px;
+  margin: 10px auto;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid black;
+}
