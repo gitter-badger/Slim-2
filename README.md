@@ -2,6 +2,8 @@
 
 ## Introduction
 
+[![Join the chat at https://gitter.im/Slimcss/Lobby](https://badges.gitter.im/Slimcss/Lobby.svg)](https://gitter.im/Slimcss/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 *Slim* is a small framework for CSS, wieghs **~3Kb** *(minified)*. I made this just for fun, I don't know what would that mean to some project, but it is! *Slim* has support for *12 grid system that is based on Flexbox, forms, buttons, navbar, and typography including links, articles and paragraphs*.
 I know! 3Kb is just *huge*, but...
 *Slim* could behave as a nice boilerplate stylesheet for your initial project. Slim has lite classes with nice syntax that you can remember fast. And I hope you like it as much as I enjoyed working on it while I was bored as hell the last 3 nights.
