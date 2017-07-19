@@ -1,6 +1,5 @@
 {
   "name": "slim",
-  "filename": "slim.min.css",
   "version": "1.0.0",
   "description": "Simple and Small CSS Framework",
   "main": "dist/slim.min.css",
