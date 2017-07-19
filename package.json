@@ -1,28 +1,39 @@
 {
   "name": "slim",
+  "filename": "slim.min.css",
   "version": "1.0.0",
-  "description": "Small and Simple framework for CSS",
-  "main": "./dist/slim.min.css",
-  "scripts": {
-    "test": "echo \"Sorry... Slim has not test runners, yet!\" && exit 1"
-  },
+  "description": "Simple and Small CSS Framework",
+  "main": "dist/slim.min.css",
+  "author": "Houssam Jelliti <jelitihoussam@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jelhouss/Slim.git"
   },
+  "scripts": {
+    "build": "gulp"
+  },
   "keywords": [
     "slim",
     "css",
+    "scss",
+    "sass",
     "flexbox-grid",
     "forms",
     "navbar",
     "buttons",
     "typography"
   ],
-  "author": "Houssam Jelliti <jelitihoussam@gmail.com>",
-  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/jelhouss/Slim/issues"
   },
-  "homepage": "https://github.com/jelhouss/Slim#readme"
+  "homepage": "https://github.com/jelhouss/Slim#readme",
+  "devDependencies": {
+    "del": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "4.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "run-sequence": "2.0.0"
+  }
 }
