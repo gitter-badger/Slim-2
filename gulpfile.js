@@ -8,11 +8,19 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 
 
-gulp.task('sass', function(){
-  console.log('\nSassing...\n');
+gulp.task('sass:min', function(){
+  console.log('\nSassing min files...\n');
   return gulp.src('src/app.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(rename('slim.min.css'))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('sass', function(){
+  console.log('\nSassing...\n');
+  return gulp.src('src/app.scss')
+    .pipe(sass())
+    .pipe(rename('slim.css'))
     .pipe(gulp.dest('dist'));
 });
 
@@ -25,7 +33,7 @@ gulp.task('clean', function() {
 gulp.task('build', function(callback){
   console.log('\nBuilding...\n');
   runSeq('clean',
-    ['sass'],
+    ['sass:min', 'sass'],
     callback
   );
 });
@@ -33,7 +41,7 @@ gulp.task('build', function(callback){
 
 gulp.task('watch', ['build'], function(){
   console.log('\nWatching... \n');
-  gulp.watch(['src/app.scss', 'src/base.scss', 'src/button.scss', 'src/classes.scss', 'src/form.scss', 'src/navbar.scss', 'src/typography.scss', 'src/util.scss'], ['sass']);
+  gulp.watch(['src/app.scss', 'src/base.scss', 'src/button.scss', 'src/classes.scss', 'src/form.scss', 'src/navbar.scss', 'src/typography.scss', 'src/util.scss'], ['sass:min', 'sass']);
 });
 
 
